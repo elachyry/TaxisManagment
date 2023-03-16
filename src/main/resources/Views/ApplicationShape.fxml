@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="843.0" prefWidth="1640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion_des_taxis.gestion_des_taxis.Controllers.ApplicationShapeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="325.0" stylesheets="@../Styles/applicationShapeStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/man_with_beard_in_suit_100px.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Admin" textFill="#e7e5e5">
+                           <font>
+                              <Font name="Century Gothic" size="29.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" spacing="15.0">
+                           <children>
+                              <MFXButton fx:id="dashboardBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#dashboard" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Dashboard" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/icons8_Home_32px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="voitureBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#voiture" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Voitures" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/car_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="clientBts" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#client" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Clients" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/users_60px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="chauffeursBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#chauffeurs" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Chauffeurs" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Driver_128px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="adminBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#admin" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Admins" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Administrator%20Male_128px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="reparationBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#reparation" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Réparations" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/gear_60px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="demandeBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#demande" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Demandes" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Track%20Order_128px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="profileBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#profile" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Profile" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/icons8_Person_32px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="deconnexionBtn" alignment="BASELINE_LEFT" depthLevel="LEVEL5" graphicTextGap="22.0" minHeight="55.0" minWidth="325.0" onMouseClicked="#deconnexion" prefHeight="55.0" prefWidth="325.0" styleClass="side-bar" text="Déconnexion" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/icons8_Sign_Out_32px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <StackPane fx:id="pageArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

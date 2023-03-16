@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="723.0" prefWidth="650.0" style="-fx-background-color: #0A0E3F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion_des_taxis.gestion_des_taxis.Controllers.AddClientController">
+   <content>
+      <StackPane fx:id="stackPane" prefHeight="640.0" prefWidth="650.0">
+         <children>
+            <AnchorPane fx:id="anchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #05071F;" stylesheets="@../Styles/addStyle.css">
+               <children>
+                  <Label fx:id="pageTitle" layoutX="148.0" layoutY="14.0" text="Ajouter un Client" textFill="#ffde00">
+                     <font>
+                        <Font name="Century Gothic Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nomVal" alignment="CENTER" layoutX="56.0" layoutY="103.0" prefHeight="63.0" prefWidth="514.0" promptText="Nom (*)" styleClass="textFields">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="prenomVal" alignment="CENTER" layoutX="57.0" layoutY="200.0" prefHeight="63.0" prefWidth="514.0" promptText="Prénom (*)" styleClass="textFields">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="telephoneVal" alignment="CENTER" layoutX="56.0" layoutY="293.0" prefHeight="63.0" prefWidth="514.0" promptText="Téléphone (*)" styleClass="textFields">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emailVal" alignment="CENTER" layoutX="56.0" layoutY="387.0" prefHeight="63.0" prefWidth="514.0" promptText="E-mail (*)" styleClass="textFields">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="adresseVal" alignment="CENTER" layoutX="56.0" layoutY="479.0" prefHeight="63.0" prefWidth="514.0" promptText="Adresse" styleClass="textFields">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <MFXButton fx:id="ajouterBtn" layoutX="56.0" layoutY="606.0" onMouseClicked="#ajouter" prefHeight="55.0" prefWidth="188.0" text="Ajouter">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </MFXButton>
+                  <MFXButton fx:id="modifierBtn" layoutX="54.0" layoutY="606.0" onMouseClicked="#modifier" prefHeight="55.0" prefWidth="188.0" text="Modifier">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </MFXButton>
+                  <MFXButton layoutX="382.0" layoutY="606.0" onMouseClicked="#anuller" prefHeight="55.0" prefWidth="188.0" text="Fermer">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </MFXButton>
+                  <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="571.0" prefHeight="24.0" prefWidth="620.0" text="Label" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font name="Century Gothic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </content>
+</DialogPane>

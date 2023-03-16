@@ -1,0 +1,39 @@
+.button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-border-color:  #FFDE00;
+-fx-border-radius: 5;
+
+}
+.button:hover{
+-fx-background-color : #FFDE00;
+-fx-text-fill: black;
+-fx-cursor: hand;
+}
+.button:pressed
+{
+-fx-background-color : #FFDE00;
+}
+
+.textFields, .passwordFields {
+	-fx-min-width: 280;
+	-fx-min-height: 45;
+	-fx-text-fill: white;
+    -fx-background-color: Transparent;
+	-fx-border-color: #FFDE00;
+	-fx-border-radius: 7;
+	-fx-prompt-text-fill: #989898;
+}
+
+.textFields:focused {
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-prompt-text-fill: #989898;
+}
+
+.box {
+    -fx-background-color:  #05071F;
+    -fx-background-radius:  10;
+    -fx-effect: dropshadow(gaussian, #FFDE00, 15, 0.4, 0.0, 0.0);
+}

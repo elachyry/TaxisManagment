@@ -1,0 +1,56 @@
+.button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-border-color:  #FFDE00;
+-fx-border-radius: 5;
+
+}
+.button:hover{
+-fx-background-color : #FFDE00;
+-fx-text-fill: black;
+-fx-cursor: hand;
+}
+.button:pressed
+{
+-fx-background-color : #FFDE00;
+}
+
+.textFields {
+	-fx-text-fill: white;
+    -fx-background-color: Transparent;
+	-fx-border-color: white;
+	-fx-border-radius: 7;
+	-fx-prompt-text-fill: #989898;
+}
+
+.textFields:focused {
+	-fx-text-fill: white;
+	-fx-border-color: #FFDE00;
+	-fx-prompt-text-fill: #989898;
+}
+
+.comboBox {
+	-fx-text-fill: white;
+	-fx-font-size: 25;
+	-fx-alignment: CENTER;
+    -fx-background-color: Transparent;
+	-fx-border-color: white;
+	-fx-border-radius: 7;
+	-fx-prompt-text-fill: #989898;
+}
+.comboBox>.list-cell {
+    -fx-alignment: center;
+}
+.combo-box-base .text{
+-fx-fill: gray;
+}
+
+.datepicker .text-field{
+-fx-prompt-text-fill: gray;
+}
+
+.container{
+    -fx-background-color : rgba(10,14,63,0.60);
+    -fx-background-radius: 18;
+}

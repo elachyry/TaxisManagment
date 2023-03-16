@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="798.0" prefWidth="939.0" style="-fx-background-color: #0A0E3F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion_des_taxis.gestion_des_taxis.Controllers.ShowMoreVidangeController">
+   <content>
+      <StackPane fx:id="stackPane" prefHeight="709.0" prefWidth="650.0">
+         <children>
+            <AnchorPane fx:id="anchorPane" prefHeight="513.0" prefWidth="914.0" style="-fx-background-color: #05071F;" stylesheets="@../Styles/addStyle.css">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Matricule" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="matriculeLabel" alignment="CENTER" text="A123456789" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Voiture" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="voitureLabel" alignment="CENTER" text="Dacia Logan" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Date Vidange" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="dateVidangeLabel" alignment="CENTER" text="15/11/2000" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Type Huile" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="typeHuileLabel" alignment="CENTER" text="15W-40" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="290.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Killometrage" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="killometrageLabel" alignment="CENTER" text="2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Prochaine Vidange" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="nextVidangeLabel" alignment="CENTER" text="1500 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="20.0" prefHeight="100.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="550.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Prix HT" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="prixHTLabel" alignment="CENTER" text="3000 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Prix TTC" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="prixTTCLabel" alignment="CENTER" text="3750 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <MFXButton layoutX="341.0" layoutY="313.0" onMouseClicked="#anuller" prefHeight="55.0" prefWidth="188.0" text="Fermer" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </MFXButton>
+                  <HBox layoutX="20.0" layoutY="20.0" prefHeight="100.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="420.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Quanitée" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="quantityLabel" alignment="CENTER" text="2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="447.0" styleClass="container">
+                           <children>
+                              <Label text="Prix Par Litre" textFill="#0217ff">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="33.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="prixUnitLabel" alignment="CENTER" text="1500 DH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </content>
+</DialogPane>
